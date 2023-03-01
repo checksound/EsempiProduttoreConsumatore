@@ -1,11 +1,12 @@
 package produttoreconsumatore.v5;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 public class Buffer {
     private int maxCapability;
-    private List<Integer> list = new ArrayList<>();
+    private List<Integer> list = new LinkedList<>();
 
     public Buffer(int maxCapability) {
         this.maxCapability = maxCapability;

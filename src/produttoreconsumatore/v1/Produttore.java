@@ -2,9 +2,9 @@ package produttoreconsumatore.v1;
 
 public class Produttore extends Thread {
 
-    private Buffer buffer;
+    private MessageBox buffer;
 
-    public Produttore(Buffer buffer) {
+    public Produttore(MessageBox buffer) {
         this.buffer = buffer;
     }
 

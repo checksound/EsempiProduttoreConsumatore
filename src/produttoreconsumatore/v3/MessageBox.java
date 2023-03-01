@@ -1,6 +1,6 @@
 package produttoreconsumatore.v3;
 
-public class Buffer {
+public class MessageBox {
     private boolean isFull = false;
     private int contenuto;
 

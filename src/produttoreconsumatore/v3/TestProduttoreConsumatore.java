@@ -3,7 +3,7 @@ package produttoreconsumatore.v3;
 public class TestProduttoreConsumatore {
 
     public static void main(String[] args) {
-        Buffer buffer = new Buffer();
+        MessageBox buffer = new MessageBox();
         Thread produttore = new Produttore(buffer);
         Thread consumatore = new Consumatore(buffer);
 

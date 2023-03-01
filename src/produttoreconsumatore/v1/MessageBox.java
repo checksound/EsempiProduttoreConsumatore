@@ -1,6 +1,6 @@
 package produttoreconsumatore.v1;
 
-public class Buffer {
+public class MessageBox {
 
     private int contenuto;
 

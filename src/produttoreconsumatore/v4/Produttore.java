@@ -3,10 +3,10 @@ package produttoreconsumatore.v4;
 public class Produttore extends Thread {
 
     private String name;
-    private Buffer buffer;
+    private MessageBox buffer;
     private Incrementer incrementer;
 
-    public Produttore(String name, Buffer buffer, Incrementer incrementer) {
+    public Produttore(String name, MessageBox buffer, Incrementer incrementer) {
         super(name);
         this.buffer = buffer;
         this.incrementer = incrementer;

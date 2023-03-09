@@ -26,14 +26,17 @@ e applicazione
 e applicazione
 [produttoreconsumatore.v4.TestProduttoreConsumatoreMulti](./src/produttoreconsumatore/v4/TestProduttoreConsumatoreMulti.java).
 
-## versione 5 - Buffer con capacità massima
-
-[produttoreconsumatore.v5.Buffer](./src/produttoreconsumatore/v5/Buffer.java) implementa una coda FIFO in cui più produttori e più consumatori possono inserire e prelevare dalla coda,
+## versione 5 - Buffer con capacità massima - coda bloccante
+![](./BLOCKING_QUEUE_page-0001.jpg)
+[produttoreconsumatore.v5.BlockingQueue](./src/produttoreconsumatore/v5/BlockingQueue.java) implementa una coda FIFO in cui più produttori e più consumatori possono inserire e prelevare dalla coda,
 [produttoreconsumatore.v5.Incrementer](./src/produttoreconsumatore/v5/Incrementer.java) per avere un generatore **safe** di numeri progressivi,
 [produttoreconsumatore.v5.Produttore](./src/produttoreconsumatore/v5/Produttore.java),
 [produttoreconsumatore.v5.Consumatore](./src/produttoreconsumatore/v5/Consumatore.java),
 e applicazione
 [produttoreconsumatore.v5.TestProduttoreConsumatoreMulti](./src/produttoreconsumatore/v5/TestProduttoreConsumatoreMulti.java).
+
+## Utilizzo della BlockingQueue
+
 
 
 

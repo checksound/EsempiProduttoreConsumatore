@@ -1,15 +1,16 @@
-package produttoreconsumatore.v5;
+package produttoreconsumatore.v6;
+
+import java.util.concurrent.BlockingQueue;
 
 public class Produttore extends Thread {
 
     private String name;
-    private BlockingQueue buffer;
-
+    private BlockingQueue<Integer> queue;
     private Incrementer incrementer;
 
-    public Produttore(String name, BlockingQueue buffer, Incrementer incrementer) {
+    public Produttore(String name, BlockingQueue<Integer> queue, Incrementer incrementer) {
         super(name);
-        this.buffer = buffer;
+        this.queue = queue;
         this.incrementer = incrementer;
     }
 
@@ -17,7 +18,8 @@ public class Produttore extends Thread {
         try {
             for(int i = 0; i < 100; i++) {
                 int value = incrementer.getNextNumber();
-                buffer.addContenuto(value);
+                System.out.println(Thread.currentThread().getName() +  " - PUT >>>>: " + value);
+                queue.put(Integer.valueOf(value));
                 sleep(10);
             }
         } catch (InterruptedException e) {

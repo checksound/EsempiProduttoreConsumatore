@@ -3,9 +3,9 @@ package produttoreconsumatore.v5;
 public class Consumatore extends Thread {
 
     private String name;
-    private Buffer buffer;
+    private BlockingQueue buffer;
 
-    public Consumatore(String name, Buffer buffer){
+    public Consumatore(String name, BlockingQueue buffer){
         super(name);
         this.buffer = buffer;
     }

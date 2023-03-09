@@ -3,7 +3,7 @@ package produttoreconsumatore.v5;
 public class TestProduttoreConsumatoreMulti {
 
     public static void main(String[] args) {
-        Buffer buffer = new Buffer(6);
+        BlockingQueue buffer = new BlockingQueue(6);
         Incrementer incrementer = new Incrementer();
         Thread produttore1 = new Produttore("produttore_1", buffer, incrementer);
         Thread produttore2 = new Produttore("produttore_2", buffer, incrementer);

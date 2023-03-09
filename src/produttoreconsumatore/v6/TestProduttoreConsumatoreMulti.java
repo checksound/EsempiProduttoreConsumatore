@@ -1,14 +1,14 @@
 package produttoreconsumatore.v6;
 
-import java.util.concurrent.BlockingDeque;
+import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
-import java.util.concurrent.LinkedBlockingQueue;
 
 public class TestProduttoreConsumatoreMulti {
 
     public static void main(String[] args) {
 
-        BlockingQueue<Integer> queue = new LinkedBlockingQueue<>(6);
+        // coda bloccante con capacità massima di 6 elementi
+        BlockingQueue<Integer> queue = new ArrayBlockingQueue<>(6);
         Incrementer incrementer = new Incrementer();
         Thread produttore1 = new Produttore("produttore_1", queue, incrementer);
         Thread produttore2 = new Produttore("produttore_2", queue, incrementer);

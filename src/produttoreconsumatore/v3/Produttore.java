@@ -10,7 +10,7 @@ public class Produttore extends Thread {
 
     public void run() {
         try {
-            for(int i = 0; i < 100; i++) {
+            for(int i = 0; i < 10; i++) {
                 buffer.addContenuto(i);
             }
         } catch (InterruptedException e) {

@@ -52,14 +52,21 @@ Istanziazione di una `BlockingQueue` di tipo `ArrayBlockingQueue` di capacity 6.
 BlockingQueue<Integer> queue = new ArrayBlockingQueue<>(6);
 
 ```
+Il thread produttore e quello consumatore per comunicare condividono un 
+oggetto di tipo `BlockingQueue<E>`.
+
 Il thread produttore [produttoreconsumatore.v6.Produttore](./src/produttoreconsumatore/v6/Produttore.java),
 il thread consumatore [produttoreconsumatore.v6.Consumatore](./src/produttoreconsumatore/v6/Consumatore.java),
 e l'applicazione
 [produttoreconsumatore.v6.TestProduttoreConsumatoreMulti](./src/produttoreconsumatore/v6/TestProduttoreConsumatoreMulti.java).
 
+
 Classi code bloccanti della *Standard Java library*:
-[java.util.concurrent.BlockingQueue<E>](https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/BlockingQueue.html)
+
+Interfaccia [java.util.concurrent.BlockingQueue<E>](https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/BlockingQueue.html)
+
 [java.util.concurrent.ArrayBlockingQueue<E>](https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ArrayBlockingQueue.html)
+
 [java.util.concurrent.LinkedBlockingQueue<E>](https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/LinkedBlockingQueue.html)
 
 Vedi: https://checksound.gitbook.io/corsojava/i-thread-e-concorrenza/wait-notify-e-notifyall-per-la-sincronizzazione-tra-i-thread

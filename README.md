@@ -2,6 +2,8 @@
 
 Il problema di avere uno o più produttori e uno o più consumatori 
 che comunicano tramite una variabile condivisa. 
+
+![](./BLOCKING_QUEUE_page-0002.jpg)
  
 ## versione 1 - Un produttore e un consumatore
 La classe del contenitore [produttoreconsumatore.v1.MessageBox](./src/produttoreconsumatore/v1/MessageBox.java) degli oggetti passati tra 
@@ -110,6 +112,9 @@ GET <<<<<: 9
 Ora il produttore e il consumatore si alternano in modo corretto-
 
 ## versione 4 - Più produttori/Più consumatori
+
+![](./BLOCKING_QUEUE_page-0003.jpg)
+
 La classe del contenitore [produttoreconsumatore.v4.MessageBox](./src/produttoreconsumatore/v4/MessageBox.java) con utilizzo di **wait()** e **notifyAll()**,
 [produttoreconsumatore.v4.Incrementer](./src/produttoreconsumatore/v4/Incrementer.java) per avere un generatore **safe** di numeri progressivi,
 il thread [produttoreconsumatore.v4.Produttore](./src/produttoreconsumatore/v4/Produttore.java),

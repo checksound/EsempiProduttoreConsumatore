@@ -63,13 +63,11 @@ e l'applicazione
 
 Classi code bloccanti della *Standard Java library*:
 
-Interfaccia [java.util.concurrent.BlockingQueue<E>](https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/BlockingQueue.html)
+Interfaccia [java.util.concurrent.BlockingQueue<E>](https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/BlockingQueue.html) 
+[java.util.concurrent.ArrayBlockingQueue<E>](https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ArrayBlockingQueue.html) 
+[java.util.concurrent.LinkedBlockingQueue<E>](https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/LinkedBlockingQueue.html) 
 
-[java.util.concurrent.ArrayBlockingQueue<E>](https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ArrayBlockingQueue.html)
-
-[java.util.concurrent.LinkedBlockingQueue<E>](https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/LinkedBlockingQueue.html)
-
-Vedi: https://checksound.gitbook.io/corsojava/i-thread-e-concorrenza/wait-notify-e-notifyall-per-la-sincronizzazione-tra-i-thread
+Vedi teoria: https://checksound.gitbook.io/corsojava/i-thread-e-concorrenza/wait-notify-e-notifyall-per-la-sincronizzazione-tra-i-thread
 
 
 

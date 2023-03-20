@@ -122,7 +122,7 @@ il thread [produttoreconsumatore.v4.Consumatore](./src/produttoreconsumatore/v4/
 e applicazione
 [produttoreconsumatore.v4.TestProduttoreConsumatoreMulti](./src/produttoreconsumatore/v4/TestProduttoreConsumatoreMulti.java).
 
-l'output adi una esecuzione: 
+l'output di una esecuzione: 
 
 ```
 
